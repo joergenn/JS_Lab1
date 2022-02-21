@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-header">
+            <img id="logoImage" src="src/book.svg" alt="logo">
+            <h2>Допомога школяреві</h2>
+        </div>
+        <div class="about_me" id="about_me">
+            <img src="src/me.jpg" alt="about me" height="100">
+            <h2>Andrian</h2>
+            <p>I'm the author of this page. Lorem ipsum</p>
+            <p>Contact Me:</p>
+            <p class="contacts">example@gmail.com</p>
+        </div>
+        <a href="#" class="ham-menu">
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+        </a>
+        <nav class="header-nav">
+            <a class="nav-link" href="#meter_calculator_id">Конвертер</a>
+            <a class="nav-link" href="#calculator_id">Калькулятор</a>
+            <a class="nav-link" href="#progression_id">Прогресії</a>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="calculators">
+            <div class="meter_calculator" id="meter_calculator_id">
+                <p><input type = "radio" name = "radio" id = "radio2" checked>Перевести метри в фути<p>
+                <p><input type = "radio" name = "radio" id = "radio1">Перевести фути в метри<p>
+                <p>Введіть кількість:</p> 
+                <input id = "speedInput" type = "number" name = "speed" step="0.01" min="0">
+                <input id = "calc" type = "submit" name = "submit" value = "Перевести">
+                <p id = "result"></p> 
+            </div>
+            <div class="calculator" id="calculator_id">
+                <p id="calc_result"></p>
+                <div class="calc_buttons">
+                    <div class="calc_button">1</div>
+                    <div class="calc_button">2</div>
+                    <div class="calc_button">3</div>
+                    <div class="calc_button">+</div>
+                    <div class="calc_button">4</div>
+                    <div class="calc_button">5</div>
+                    <div class="calc_button">6</div>
+                    <div class="calc_button">-</div>
+                    <div class="calc_button">7</div>
+                    <div class="calc_button">8</div>
+                    <div class="calc_button">9</div>
+                    <div class="calc_button">*</div>
+                    <div class="calc_button">0</div>
+                    <div class="calc_button">.</div>
+                    <div class="calc_button">&#8592;</div>
+                    <div class="calc_button">/</div>
+                    <div class="calc_button">(</div>
+                    <div class="calc_button">)</div>
+                    <div class="calc_button">C</div>
+                    <div class="calc_button">=</div>
+                </div> 
+            </div>
+        </div>
+        <div class="progression" id="progression_id">
+            <p id = "progression_result">Введіть послідновність чисел (через пробіл):</p> 
+            <textarea id="numbers" maxlength="1000"></textarea>
+            <input id = "progressionButton" type = "submit" name = "submit" value = "Знайти">
+        </div>
+    </div>
+ 
+
+    <footer>
+        <p>All rigths reserves &#169;</p>
+        <p>2022</p>
+        <p>example@gmail.com</p>
+    </footer>
+</body>
+</html>
